@@ -34,7 +34,7 @@ if(!$q)
 }
 
 $smarty = new Smarty;
-$smarty->display('template/eventos.tpl');
+$smarty->display('eventos.tpl');
 
 while($r = $q->fetch()) {
 	echo $r['pais'] ." - ". $r['localidad']  ." - ". $r['fecha']  ." - ". $r['hora']  ."hs - ". $r['descripcion']; 

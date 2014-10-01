@@ -33,5 +33,5 @@ $eventos = $q->fetchAll();
 
 $smarty = new Smarty;
 $smarty->assign('lista', $eventos);
-$smarty->display('template/eventos.tpl');
+$smarty->display('eventos.tpl');
 ?>

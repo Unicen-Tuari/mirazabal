@@ -1,137 +1,167 @@
-/* Elimina valores que ponen los navegadores por defecto */
-*{
-	margin:0px;
-	padding:0px;
+/***** BASE CSS *****/
+
+
+
+/* Responsive Image */
+
+img.responsive {
+	max-width:100%;
+	height:auto;
+	width:auto;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	margin-left: 0px;
 }
 
-header{
-	margin: auto;
-	height: 100%;
-	width: 100%;
-	background-color: white;
+  
+/* Additional */
+    
+#divBoxed {position:relative}
+
+
+/* Adjustments */
+      
+.divPanel.notop {padding-top:0px}
+
+/***** BOOTSTRAP CSS BASE OVERRIDE *****/
+
+body {
+	background-position: inherit inherit;
+	background-repeat: repeat repeat;
 }
 
-p.portada{
-    margin: auto; 
-	font-family: Edwardian Script ITC;
-	text-align: center; 
-	font-size: 5em;
-	color: black;
+#divBoxed {
+	margin-top: 40px;
 }
 
-/* Estilo nav */
-nav{
-	margin:1em auto; /* 50px desplazamiento vertical y centrado */
-	width:62.500em;     /* Ancho */
-	height:2.500em;      /* Alto */
-    background-color: red; /* Color */
+#divLogo{margin-top: 40px;
+	margin-bottom: 0px;
+	text-align: left;
 }
 
-/* Lista de "vinculos" */
-ul{
-	list-style: none; /* Sin estilo */
-	width:62.500em;     /* Ancho y alto igual al nav */
-	height:2.500em;
+#divSiteTitle{	
+	font-family: Syncopate; 
+	font-size: 25px; 
+	line-height: 49px; 
+	color: rgb(224, 95, 3); 
+	text-shadow: rgba(0, 0, 0, 0.0980392) 0px 3px 5px, rgba(255, 255, 255, 0.298039) 0px -5px 35px; 
+	letter-spacing: 4px; 
+	font-weight: normal; 
+	font-style: normal; 
+	text-transform: uppercase;
 }
 
-/* Vinculos */
-li{
-	float:left;  /* listo los vinculos hacia la izquierda */
-	width:12.500em; /* Ancho de cajita por vinculo */
-	height: 2.500em; /* Alto de cajita por vinculo */
-	background-color: green;
-	overflow: hidden; /* Esconde los contenedores hacia adentro */
-	margin-top:0px; /* Sube la cajita hasta arriba */
+#divTagLine{
+	color: rgb(150, 150, 150); 
+	line-height: 24px; 
+	text-transform: none; 
+	letter-spacing: 4px; 
+	font-size: 16px; 
+	padding-left: 2px; 
+	padding-right: 2px; 
+	background-color: transparent; 
+	text-shadow: none; 
+	font-family: Abel; 
+	font-weight: normal; 
+	font-style: normal; 
+	text-decoration: initial;
 }
 
-/* Genera el efecto hover */
-div.contenedor_general:hover{
-    margin-top:-2.500em; /* Negativo para que la cajita baje */
+.camera_wrap .camera_wrap .camera_wrap  {
+	box-shadow: rgba(0, 0, 0, 0.121569) 0px 3px 8px inset; 
+	background-color: rgb(230, 230, 230);  
 }
 
-div.contenedor_general{
-	width:12.500em;
-	height:5.000em;
-	background-color: yellow;
-	-webkit-transition:margin-top .3s;
+.camera_wrap {
+	display: block;
+	margin-left: 50px;
+	margin-bottom: 15px;
+	height: auto;
+	width: auto;
+	border: 5px solid rgb(255, 255, 255);
+	margin-top: 20px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px;
+	box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px;
 }
 
-div.contenedor_uno{
-    width:12.500em;
-	height:2.250em;
+Footer{
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
 	background-color: black;
-	overflow: hidden;
-	border-bottom:0.250em solid #f0296b;
+	color: white;
+	font-family: Actor, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-left:-20px;
+	margin-right:-20px;
+	padding-left:20px;
+	padding-right:20px;
 }
 
-div.contenedor_dos{
-	width:12.500em;
-	height:2.250em;
-	background-color: #f0296b;
-	overflow: hidden;
-	border-bottom:0.250em solid black;
+.divPanel {
+	padding: 30px;
 }
 
-p.texto_uno, p.texto_dos{
-    text-align: center;
-	margin-top:0.625em;
-	color:white;
+.transparent-bg {
+	-moz-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px; 
+	box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px;
+	background-color: rgb(255, 255, 255);
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+   
+#divLogo {
+	margin-top:10px;}
+
+  
+#divMenuRight {
+	float:center;
+	width:94.5%;
+	margin-top: 10px;
+	padding-top:0px;
 }
 
-section.arriba{
-    margin: auto;
-	width: auto;
-	height: auto;
-	margin: 00em 00em 00em 11.8em;
-}
-
-section.abajo{
-    margin: auto;
-	width: auto;
-	height: auto;
-	background-color: white;
-}
-
-div.redes{
-    margin: auto;
-	margin: 00em 00em 1.563em 6.250em;
+body  {
+	padding-top:0px;
+	margin-left:-20px;
+	margin-right:-20px;
 }
 
 /* Biografia */
 
-section.container{
-	float: centre;
-	width: auto;
-	height: auto;
-	border-color: red;
-}
-
-section.derecha{
+div.derecha{
     float:left;
-	width:14%;
+	width:auto;
 	height:auto;
 	background-color: #BEB9B9;
-	margin: 00em 00em 00em 26.063em;
 }
 
-section.izquierda{
+div.izquierda{
     float: right;
-	width:25%;
-	height:17.250em;
+	width:auto;
+	height:auto;
 	background-color: #BEB9B9;
-	margin: 00em 26.563em 00em 00em;
 }
 
 div.bio_foto{
-    float: center;
-	width: 15.625em;
-	height: 0px;
-	margin: 00em 00em 00em 00em;
+	width: auto;
+	height: auto;
+	background-color: #BEB9B9;
 }
 
 div.datos{
-	width:37.500em;
-	margin: 00em 00em 00em 00em;
+	width:auto;
+	height: auto;
+}
+
+p{
+	font-family: Actor, sans-serif;
+	font-size: 14px;
+	color:black;
 }
 
 /* Eventos */
@@ -141,16 +171,16 @@ h1{
 	font-size: 2.500em;
 	color: #f0296b;
 	text-align: center;
+	background-color: black; 
 }
 
 section.eventos{
-	width: 49.995em;
+	width: auto;
 	height: auto;
 	font: Arial;
 	font-size: 1.250em;
 	color: red;
-	margin: 00em 00em 0.625em 173px;
-	background-color: black;
+	background-color: white;
 }
 
 div.eventos{
@@ -158,54 +188,23 @@ div.eventos{
 	float: center;
 	margin: auto;
 	width: auto;
-	margin: 0.625em 00em 0.625em 0em;
 	background-color: white;
 }
 
 /* Fotos */
-
-#cabecera { 
-	background-color: #feffe4; 
-}
-
-h2{ 
-	font-family: Edwardian Script ITC;
-	font-size: 1.875em;
-	width: 74%;
-	text-align: center; 
-	padding: 0.031em;
-	background-color: #f0296b;
-	margin: 00em 00em 00em 5.775em;
-	text-shadow: 0.063em 0.063em 0 white, -0.063em -0.063em white, 0.063em -0.063em white, -0.063em 0.063em white, 0 0.063em white, 0.063em 0 white, -0.063em 0 white, 0 -0.063em white;
-} 
-
-#galeria-small{  
-    width: 1000px;  
-    height: auto;  
-	margin: 0px 0px 0px 173px;
-	background-color: pink;
-}   
-
-#galeria-small img{  
-    width: 200px;  
-    height: 200px;  
-    border: 1px solid white;
-	margin: 0px 0px 0px 32px;
-}  
-  
-#contenedor{  
-    width: 1000px;  
-    margin: 00em 00em 00em 20em;  
-    padding-top: 10px;  
+section.galeria{
+	margin-left: 55px;
 }
 
 /* Contacto */
+section.contacto{
+	margin-left: 200px;
+}
 
 h3{
    font-size: 2.500em; 
    color: black; 
    text-align: center; 
-   margin: 00em 00em 00em 11.563em; 
 }
 
 h4{
@@ -213,12 +212,12 @@ h4{
    font-size: 1.1em; 
    color: grey; 
    text-align: left; 
-   margin: 0.625em 00em 00em 11.563em;
+   margin: 0.625em 00em 00em 00em;
    text-decoration: underline;
 }
 
 div.contenedor_formulario{
-	margin: 0.625em 00em 00em 11.563em;
+	margin: 0.625em 00em 00em 00em;
 	line-height: 1.8em;
 	color: #555;
 	border-bottom-color: #d83f28;
@@ -250,17 +249,9 @@ textarea{
 }
 
 div.boton_enviar{
-	margin: 0.625em 00em 1.875em 11.563em;
+	margin: 0.625em 00em 1.875em 00em;
 }
 
-/* --- */
-
-footer{
-	width: 60.000em;
-	height: 9.375em;
-	margin: 21.875em auto 0;
-	font: Arial;
-	text-align: center; 
-	font-size: 1.250em;
-	color: black;
+section.container{
+	margin-left: -70px;
 }

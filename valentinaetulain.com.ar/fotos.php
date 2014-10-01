@@ -33,5 +33,5 @@ $imagenes = $q->fetchAll();
 
 $smarty = new Smarty;
 $smarty->assign('galeria', $imagenes);
-$smarty->display('template/fotos.tpl');
+$smarty->display('fotos.tpl');
 ?>
