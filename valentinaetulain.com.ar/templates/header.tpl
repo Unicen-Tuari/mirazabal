@@ -49,6 +49,7 @@
 											<ul class="nav navbar-nav">
 											  <li><a href="carrito.php"> Mi Carrito </a></li>
 											</ul>
+											<button type="button" class="nav navbar-right"> <a href="registro.php" class="navbar-link"> Registrate </a> </button>
 										</div>
 									</nav>	
 				

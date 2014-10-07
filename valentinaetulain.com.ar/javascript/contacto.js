@@ -19,7 +19,7 @@ function validacion()
 	
 	var user = document.getElementById("email").value;
 	var dato = user.lenght;
-	if (dato === 0)
+	if (dato < 5)
 	{
 		alert("Por favor ingrese su email");
 		email.focus();
@@ -32,6 +32,15 @@ function validacion()
 	{
 		alert("Por favor escriba su mensaje");
 		mensaje.focus();
+		return false;
+	}
+	
+	var user = document.getElementById("apellido").value;
+	var dato = user.lenght;
+	if (dato < 3 || dato > 20)
+	{
+		alert("Por favor ingrese su email");
+		email.focus();
 		return false;
 	}
 	
