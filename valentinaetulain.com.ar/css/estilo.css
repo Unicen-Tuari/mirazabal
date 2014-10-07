@@ -137,20 +137,20 @@ div.derecha{
     float:left;
 	width:auto;
 	height:auto;
-	background-color: #BEB9B9;
+	background-color: rgb(15, 15, 15); 
 }
 
 div.izquierda{
     float: right;
 	width:auto;
 	height:auto;
-	background-color: #BEB9B9;
+	background-color: rgb(15, 15, 15); 
 }
 
 div.bio_foto{
 	width: auto;
 	height: auto;
-	background-color: #BEB9B9;
+	background-color: rgb(15, 15, 15); 
 }
 
 div.datos{
@@ -161,7 +161,7 @@ div.datos{
 p{
 	font-family: Actor, sans-serif;
 	font-size: 14px;
-	color:black;
+	color: rgb(224, 95, 3);
 }
 
 /* Eventos */
@@ -194,6 +194,12 @@ div.eventos{
 /* Fotos */
 section.galeria{
 	margin-left: 55px;
+}
+
+h6{
+	font-family: syncopate;
+	color: rgb(150, 150, 150);
+	font-size: 20px;
 }
 
 /* Contacto */
@@ -259,4 +265,12 @@ section.container{
 img.carrito{
 	width: 15%;
 	height: 15%;
+}
+
+/* Carrito */
+
+td{
+	font-family: Abel;
+	font-size: 20px;
+	color: rgb(224, 95, 3);
 }

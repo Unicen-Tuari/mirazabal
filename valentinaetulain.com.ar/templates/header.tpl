@@ -3,6 +3,12 @@
 	<html>
 		
 		<head>
+			<!--
+			<link href='http://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Vesper+Libre' rel='stylesheet' type='text/css'>
+			-->
 			<title>Valentina Etulain</title>
 			<link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
 			<link href="bootstrap-3.2.0-dist/css/bootstrap-responsive.min.css" rel="stylesheet">

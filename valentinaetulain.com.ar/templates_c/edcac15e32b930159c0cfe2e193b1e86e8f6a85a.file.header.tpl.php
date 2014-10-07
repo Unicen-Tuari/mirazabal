@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-10-07 10:28:08
+<?php /* Smarty version Smarty-3.1.19, created on 2014-10-07 11:25:07
          compiled from ".\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2889542aeb9d2f8bc7-89994727%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'edcac15e32b930159c0cfe2e193b1e86e8f6a85a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1412670486,
+      1 => 1412673904,
       2 => 'file',
     ),
   ),
@@ -24,6 +24,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<html>
 		
 		<head>
+			<!--
+			<link href='http://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Vesper+Libre' rel='stylesheet' type='text/css'>
+			-->
 			<title>Valentina Etulain</title>
 			<link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
 			<link href="bootstrap-3.2.0-dist/css/bootstrap-responsive.min.css" rel="stylesheet">
