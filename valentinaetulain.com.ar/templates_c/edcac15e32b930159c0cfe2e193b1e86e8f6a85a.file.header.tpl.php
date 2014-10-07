@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-10-01 00:26:41
+<?php /* Smarty version Smarty-3.1.19, created on 2014-10-07 10:28:08
          compiled from ".\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2889542aeb9d2f8bc7-89994727%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'edcac15e32b930159c0cfe2e193b1e86e8f6a85a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1412115993,
+      1 => 1412670486,
       2 => 'file',
     ),
   ),
@@ -47,19 +47,22 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 									<nav class="navbar navbar-inverse" role="navigation">
 										<div class="collapse navbar-collapse navbar-ex1-collapse">
 											<ul class="nav navbar-nav">
-											  <li><a href="index.php">Home</a></li>
+											  <li><a href="index.php"> Home </a></li>
 											</ul>
 											<ul class="nav navbar-nav">
-											  <li><a href="Biografia.php">Biografia</a></li>
+											  <li><a href="Biografia.php"> Biografia </a></li>
 											</ul>
 											<ul class="nav navbar-nav">
-											  <li><a href="eventos.php">Eventos</a></li>
+											  <li><a href="eventos.php"> Eventos </a></li>
 											</ul>
 											<ul class="nav navbar-nav">
-											  <li><a href="fotos.php">Fotos</a></li>
+											  <li><a href="fotos.php"> Fotos </a></li>
 											</ul> 
 											<ul class="nav navbar-nav">
-											  <li><a href="contacto.php">Contacto</a></li>
+											  <li><a href="contacto.php"> Contacto </a></li>
+											</ul>
+											<ul class="nav navbar-nav">
+											  <li><a href="carrito.php"> Mi Carrito </a></li>
 											</ul>
 										</div>
 									</nav>	

@@ -255,3 +255,8 @@ div.boton_enviar{
 section.container{
 	margin-left: -70px;
 }
+
+img.carrito{
+	width: 15%;
+	height: 15%;
+}

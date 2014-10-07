@@ -14,12 +14,13 @@
 				<br style="clear:both"><div style="margin-bottom:40px"></div>
 			</div> 
 		</div>
-	
-	
-		<i class="fa fa-facebook-square-fa-2x"> </i>
-		<i class="fa fa-twitter-square-fa-2x"> </i>
-		<i class="fa fa-youtube-fa-2x"> </i>
-		<i class="fa fa-instagram-fa-2x"> </i>
 	</div>
+
+			<a href="www.facebook.com"> <img src="imagenes/bt_facebook.jpg"> </a>
+			<a href="www.twitter.com"> <img src="imagenes/bt_twitter.jpg"> </a>
+			<a href="www.instagram.com"> <img src="imagenes/bt_instagram.jpg"> </a>
+			<a href="www.youtube.com"> <img src="imagenes/bt_youtube.jpg"> </a>
+			<a href="www.google.com"> <img src="imagenes/bt_g+.jpg"> </a>
+
 </section>
 {include file="footer.tpl"}

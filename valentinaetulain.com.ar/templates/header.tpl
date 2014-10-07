@@ -26,19 +26,22 @@
 									<nav class="navbar navbar-inverse" role="navigation">
 										<div class="collapse navbar-collapse navbar-ex1-collapse">
 											<ul class="nav navbar-nav">
-											  <li><a href="index.php">Home</a></li>
+											  <li><a href="index.php"> Home </a></li>
 											</ul>
 											<ul class="nav navbar-nav">
-											  <li><a href="Biografia.php">Biografia</a></li>
+											  <li><a href="Biografia.php"> Biografia </a></li>
 											</ul>
 											<ul class="nav navbar-nav">
-											  <li><a href="eventos.php">Eventos</a></li>
+											  <li><a href="eventos.php"> Eventos </a></li>
 											</ul>
 											<ul class="nav navbar-nav">
-											  <li><a href="fotos.php">Fotos</a></li>
+											  <li><a href="fotos.php"> Fotos </a></li>
 											</ul> 
 											<ul class="nav navbar-nav">
-											  <li><a href="contacto.php">Contacto</a></li>
+											  <li><a href="contacto.php"> Contacto </a></li>
+											</ul>
+											<ul class="nav navbar-nav">
+											  <li><a href="carrito.php"> Mi Carrito </a></li>
 											</ul>
 										</div>
 									</nav>	
