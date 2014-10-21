@@ -23,11 +23,13 @@ pais  VARCHAR( 50 ) NOT NULL,
 localidad VARCHAR( 50 ) NOT NULL,
 fecha DATE NOT NULL,
 hora int NOT NULL,
-descripcion VARCHAR( 150 ) NOT NULL,  
+descripcion VARCHAR( 150 ) NOT NULL
 );
 
-INSERT INTO eventos (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Argentina', 'Tandil', '2014-07-12', '19', 'Argentina campeon');
-INSERT INTO eventos (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'España', ' Pamplona‎', '2014-07-3', '19', 'Casamiento');
-INSERT INTO eventos (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Italia', 'Minturno', '2014-08-3', '19', 'Cumpleaños de 15');
-INSERT INTO eventos (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Francia', 'Aviñón‎', '2014-09-3', '19', 'Desfile');
-INSERT INTO eventos (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Holanda', 'Bussum', '2014-10-3', '19', 'Casamiento de Maxima');
+INSERT INTO eventos (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Argentina', 'Tandil', '2014-07-12', '19', 'Argentina campeon);
+
+INSERT INTO eventos (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Espa�a', ' Pamplona', '2014-07-3', '19', 'Casamiento');
+
+INSERT INTO eventos (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Italia', 'Minturno', '2014-08-3', '19', 'Cumplea�os de 15');
+
+INSERT INTO eventos (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Francia', 'Avi�on', '2014-09-3', '19', 'Desfile');

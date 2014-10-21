@@ -1,10 +1,8 @@
 {include file="header.tpl"}
 <section class="contacto">
-	<div class="row-fluid">
-		<div id="headerSeparator">	</div>
-		<div class="camera_full_width">
-			<div id="camera_wrap" class="camera_wrap">
-				<div class="camera_fakehover">
+	<div class="content">
+		<div class="row">						
+			<div class="contacto">
 					<h1> Registrate! </h1>
 				<div> 
 				<h4> Complete el siguiente formulario: </h4>
@@ -28,11 +26,8 @@
 					<label for="email">Email:</label>
 					<br>
 					<input type="text" name="email" id="email">
-				</div>			
-				
-				<div class="boton_enviar">
-					<input type="submit" value="Enviar">
-				</div>
+				</div> <br>
+				<button id="cargar"> Enviar </button>
 			</form>
 		</div>
 	</div>

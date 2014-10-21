@@ -1,38 +1,36 @@
 {include file="header.tpl"}
 <section class="contacto">
-	<div class="row-fluid">
-		<div id="headerSeparator">	</div>
-		<div class="camera_full_width">
-			<div id="camera_wrap" class="camera_wrap">
-				<div class="camera_fakehover">
-					<h1> Contacto </h1>
-				<div> 
-				<h4> Gracias por dejar tu comentario! </h4>
+	<div class="content">
+		<div class="row">						
+			<div class="contacto">
+				<h1> Contacto </h1>
 			</div>
+			<div class="conten1">
+				<div> 
+					<h4> Gracias por dejar tu comentario! </h4>
+				</div>
 															
-			<form action="contactoExito.html" onSubmit="return  validacion();" > <!-- action="php\execute.php" method="POST" -->
+			<form id="formualario" method="post" onSubmit="return validacion();" >
+				<div id="contenidoform">
+					<div class="contenedor_formulario">
+						<label for="name">Nombre:</label>
+						<br>
+						<input type="text" class="requerido" id="nombre" name="nombre">
+					</div>
 															
-				<div class="contenedor_formulario">
-					<label for="name">Nombre:</label>
-					<br>
-					<input type="text" name="name" id="nombre">
-				</div>
-														
-				<div class="contenedor_formulario">
-					<label for="email">Email:</label>
-					<br>
-					<input type="text" name="email" id="email">
-				</div>
+					<div class="contenedor_formulario">
+						<label for="email">Email:</label>
+						<br>
+						<input type="text" name="email" id="email"> 
+					</div>
 
-				<div class="contenedor_formulario">
-					<label for="message">Mensaje:</label>
+					<div class="contenedor_formulario">
+						<label for="message">Mensaje:</label>
+						<br>
+						<input type="text" class="requerido" name="message" id="message">
+					</div>
 					<br>
-					<textarea name="message" id="message"></textarea>
-					<br>
-				</div>
-
-				<div class="boton_enviar">
-					<input type="submit" value="Enviar">
+					<button id="cargar"> Enviar </button>
 				</div>
 			</form>
 		</div>

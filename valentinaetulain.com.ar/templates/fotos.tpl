@@ -1,26 +1,13 @@
-{include file="header.tpl"}
-
-<section class="galeria">
-	<div class="row">
+<div class="row">
 	{foreach $galeria as $img}
-		<div class="col-sx-4 col-md-3">
-				
-					<a href="visor.php?id={$img.id}" >
-						<img src="{$img.archivo}" class="img-responsive" alt ="imagen db" />
-					</a>
-					<div class="caption">
-						<h6>"{$img.titulo}"</h6>
-						<p>"{$img.descripcion}"</p>
-						<p>
-							<a href="carrito.php" class="btn btn-primary" role="button">Comprar</a>
-							<a href="visor.php" class="btn btn-default" role="button">Ampliar</a>
-						</p>
-					</div><br><br><br><br>
-					
-					
+		<div class="col-sx-4 col-md-3">	
+			<img src="{$img.archivo}" class="img-responsive" alt ="imagen db" />
+			<div class="caption">
+				<h6>"{$img.titulo}"</h6>
+				<p>"{$img.descripcion}"</p> 
+				<button class="btn btn-default" data-toggle="modal" data-target="#myModal"> <a href="index.php?action=carrito" class="btn btn-primary" role="button"> Comprar </a> </button>
+				<button class="btn btn-default" data-toggle="modal" data-target="#myModal" Onclick="verfoto({$img.id})"> Ampliar </button>
+			</div><br>
 		</div>
-		{/foreach}
-	</div>
-</section>
-
-{include file="footer.tpl"}
+	{/foreach}
+</div>

@@ -22,6 +22,13 @@
 			$q = $conn->query($sql);
 			return $q->fetchAll();			
 		}
+		
+		public function queryPrepare($sql, $arr){
+			$conn = $this->conectar();
+			$q = $conn->prepare($sql, $arr);
+			$q->execute($arr);
+			return $q->fetchAll();
+		}
 }
 
 ?>
