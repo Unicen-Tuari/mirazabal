@@ -1,6 +1,15 @@
 function validacion() 
-{
-	
+{	
+	$(document).ready(function(){
+		$('#cargar').click(function(){
+			$.ajax({
+				url: "index.php?action=contactoExito",
+				success:function(data){
+					$('#contenidoform').html(data);
+				}
+			})
+		});
+	});
 	var user = document.getElementById("nombre").value;
 	//alert(user);
 	
@@ -43,5 +52,4 @@ function validacion()
 		email.focus();
 		return false;
 	}
-	
 }

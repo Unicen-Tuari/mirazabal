@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-10-21 20:29:16
+<?php /* Smarty version Smarty-3.1.19, created on 2014-10-21 21:03:38
          compiled from ".\templates\footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:15438542aeb9d31b1c6-84848642%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '44836f738e1585a4503521c3a24c76512011e24d' => 
     array (
       0 => '.\\templates\\footer.tpl',
-      1 => 1413916149,
+      1 => 1413918213,
       2 => 'file',
     ),
   ),
@@ -30,6 +30,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<script src="bootstrap-3.2.0-dist/js/Jquery.js" type="text/javascript"></script>
 		<script src="bootstrap-3.2.0-dist/js/bootstrap.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="javascript/jquery-2.1.1.min.js"> </script>
+		<script type="text/javascript" src="javascript/fotos.js"> </script>
 		<script type="text/javascript" src="javascript/contacto.js"> </script>
 	</body>
 </html><?php }} ?>

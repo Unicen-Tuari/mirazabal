@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-10-21 17:28:16
+<?php /* Smarty version Smarty-3.1.19, created on 2014-10-21 20:57:48
          compiled from ".\templates\contacto.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:24710542aedaa0b0036-99766818%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e5bae9bd497495866c20ec8e9ce498f373e20748' => 
     array (
       0 => '.\\templates\\contacto.tpl',
-      1 => 1413905145,
+      1 => 1413917851,
       2 => 'file',
     ),
   ),
@@ -31,30 +31,30 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<div> 
 					<h4> Gracias por dejar tu comentario! </h4>
 				</div>
-															
-			<form id="formualario" method="post" onSubmit="return validacion();" >
-				<div id="contenidoform">
-					<div class="contenedor_formulario">
-						<label for="name">Nombre:</label>
-						<br>
-						<input type="text" class="requerido" id="nombre" name="nombre">
-					</div>
-															
-					<div class="contenedor_formulario">
-						<label for="email">Email:</label>
-						<br>
-						<input type="text" name="email" id="email"> 
-					</div>
+				<div id="contenidoform">										
+					<form id="formualario" method="post" onSubmit="return validacion();" >
+						<div class="contenedor_formulario">
+							<label for="name">Nombre:</label>
+							<br>
+							<input type="text" class="requerido" id="nombre" name="nombre">
+						</div>
+																
+						<div class="contenedor_formulario">
+							<label for="email">Email:</label>
+							<br>
+							<input type="text" name="email" id="email"> 
+						</div>
 
-					<div class="contenedor_formulario">
-						<label for="message">Mensaje:</label>
+						<div class="contenedor_formulario">
+							<label for="message">Mensaje:</label>
+							<br>
+							<input type="text" class="requerido" name="message" id="message">
+						</div>
 						<br>
-						<input type="text" class="requerido" name="message" id="message">
-					</div>
-					<br>
-					<button id="cargar"> Enviar </button>
+						<button id="cargar"> Enviar </button>
+					</form>
 				</div>
-			</form>
+			</div>
 		</div>
 	</div>
 </section>

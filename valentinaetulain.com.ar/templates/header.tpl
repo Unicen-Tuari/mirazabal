@@ -17,33 +17,7 @@
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 			{literal}
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-				<title>Tutorial IguannaWeb</title>
 				<script language="javascript" type="text/javascript" src="javascript/jquery-2.1.1.min.js"></script>
-				<script>
-				$(document).ready(function(){
-					$('#cargar').click(function(){
-						$.ajax({
-							url: "index.php?action=fotos",
-							success:function(data){
-								$('#contenido').html(data);
-								}
-						})
-					});
-				});
-				</script>
-				
-				<script>
-					$(document).ready(function(){
-						$('#cargar').click(function(){
-							$.ajax({
-								url: "index.php?action=contactoExito",
-								success:function(data){
-									$('#contenidoform').html(data);
-								}
-							})
-						});
-					});
-				</script>
 			{/literal}
 		</head>
 

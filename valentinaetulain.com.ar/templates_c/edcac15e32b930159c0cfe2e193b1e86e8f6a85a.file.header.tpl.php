@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-10-21 20:35:07
+<?php /* Smarty version Smarty-3.1.19, created on 2014-10-21 21:03:38
          compiled from ".\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2889542aeb9d2f8bc7-89994727%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'edcac15e32b930159c0cfe2e193b1e86e8f6a85a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1413916494,
+      1 => 1413918147,
       2 => 'file',
     ),
   ),
@@ -38,33 +38,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 			
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-				<title>Tutorial IguannaWeb</title>
 				<script language="javascript" type="text/javascript" src="javascript/jquery-2.1.1.min.js"></script>
-				<script>
-				$(document).ready(function(){
-					$('#cargar').click(function(){
-						$.ajax({
-							url: "index.php?action=fotos",
-							success:function(data){
-								$('#contenido').html(data);
-								}
-						})
-					});
-				});
-				</script>
-				
-				<script>
-					$(document).ready(function(){
-						$('#cargar').click(function(){
-							$.ajax({
-								url: "index.php?action=contactoExito",
-								success:function(data){
-									$('#contenidoform').html(data);
-								}
-							})
-						});
-					});
-				</script>
 			
 		</head>
 
