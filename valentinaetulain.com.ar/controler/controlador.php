@@ -69,5 +69,11 @@
 			$vista = new Vistaregistro();
 			$vista->mostrar();
 		}
+		
+		public function login(){
+			include './view/vistalogin.php';
+			$vista = new Vistalogin();
+			$vista->mostrar();
+		}
 	}
 ?>

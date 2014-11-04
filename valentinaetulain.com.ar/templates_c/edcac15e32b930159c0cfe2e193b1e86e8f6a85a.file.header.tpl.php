@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-10-21 21:03:38
+<?php /* Smarty version Smarty-3.1.19, created on 2014-10-23 18:00:18
          compiled from ".\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2889542aeb9d2f8bc7-89994727%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'edcac15e32b930159c0cfe2e193b1e86e8f6a85a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1413918147,
+      1 => 1414079722,
       2 => 'file',
     ),
   ),
@@ -75,7 +75,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 											<ul class="nav navbar-nav navbar-right">
 											  	<a href="#" data-toggle="dropdown"> Sesion	</a>
 												<ul class="dropdown-menu">
-													<li><a href="index.php?action=registro"> Registro </a> </li>
+													<li><a href="index.php?action=login"> Login </a> </li>
 													<li><a href="index.php?action=carrito"> Mi carrito </a> </li>
 												</ul>
 											</ul>

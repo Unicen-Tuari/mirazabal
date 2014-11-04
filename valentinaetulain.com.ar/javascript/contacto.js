@@ -10,6 +10,7 @@ function validacion()
 			})
 		});
 	});
+	
 	var user = document.getElementById("nombre").value;
 	//alert(user);
 	

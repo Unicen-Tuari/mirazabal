@@ -7,16 +7,10 @@
 			</div>
 			<div class="conten1">
 				<div> 
-					<h4> Gracias por dejar tu comentario! </h4>
+					<h4> Gracias por su visita! </h4>
 				</div>
 				<div id="contenidoform">										
-					<form id="formualario" method="post" onSubmit="return validacion();" >
-						<div class="contenedor_formulario">
-							<label for="name">Nombre:</label>
-							<br>
-							<input type="text" class="requerido" id="nombre" name="nombre">
-						</div>
-																
+					<form id="formualario">					
 						<div class="contenedor_formulario">
 							<label for="email">Email:</label>
 							<br>
@@ -24,12 +18,13 @@
 						</div>
 			
 						<div class="contenedor_formulario">
-							<label for="message">Mensaje:</label>
+							<label for="message">Password:</label>
 							<br>
-							<textarea rows="4" cols="50" class="requerido" name="message" id="message">
-							</textarea>
+							<input type="password">
 						</div>
-						<br>
+						<a class="vacia" href="index.php?action=registro"> 
+							<p class="bio"> Aun no tengo cuenta <a href="index.php?action=registo"> </a> </p>
+						</a>
 						<button id="cargar"> Enviar </button>
 					</form>
 				</div>

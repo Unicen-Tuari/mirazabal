@@ -54,7 +54,7 @@
 											<ul class="nav navbar-nav navbar-right">
 											  	<a href="#" data-toggle="dropdown"> Sesion	</a>
 												<ul class="dropdown-menu">
-													<li><a href="index.php?action=registro"> Registro </a> </li>
+													<li><a href="index.php?action=login"> Login </a> </li>
 													<li><a href="index.php?action=carrito"> Mi carrito </a> </li>
 												</ul>
 											</ul>

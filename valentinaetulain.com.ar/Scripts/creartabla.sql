@@ -16,7 +16,7 @@ INSERT INTO imagen (titulo, descripcion, archivo) VALUES ('Paisaje', 'Dia de cam
 
 DROP TABLE IF EXISTS eventos;
 
-CREATE TABLE eventos (  
+CREATE TABLE evento (  
 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,  
 administrador VARCHAR( 50 ) NOT NULL,
 pais  VARCHAR( 50 ) NOT NULL,
@@ -26,10 +26,10 @@ hora int NOT NULL,
 descripcion VARCHAR( 150 ) NOT NULL
 );
 
-INSERT INTO eventos (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Argentina', 'Tandil', '2014-07-12', '19', 'Argentina campeon);
+INSERT INTO evento (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Argentina', 'Tandil', '2014-07-12', '19', 'Argentina campeon);
 
-INSERT INTO eventos (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'España', ' Pamplona', '2014-07-3', '19', 'Casamiento');
+INSERT INTO evento (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Espa&ntildea', ' Pamplona', '2014-07-3', '19', 'Casamiento');
 
-INSERT INTO eventos (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Italia', 'Minturno', '2014-08-3', '19', 'Cumpleaños de 15');
+INSERT INTO evento (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Italia', 'Minturno', '2014-08-3', '19', 'Cumplea&ntildeos de 15');
 
-INSERT INTO eventos (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Francia', 'Aviñon', '2014-09-3', '19', 'Desfile');
+INSERT INTO evento (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Francia', 'Avi&ntildeon', '2014-09-3', '19', 'Desfile');

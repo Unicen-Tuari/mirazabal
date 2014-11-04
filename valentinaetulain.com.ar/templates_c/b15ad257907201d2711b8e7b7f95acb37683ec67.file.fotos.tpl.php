@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-10-21 20:06:54
+<?php /* Smarty version Smarty-3.1.19, created on 2014-10-23 16:22:29
          compiled from ".\templates\fotos.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:9704542aedccdc6b64-63133178%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b15ad257907201d2711b8e7b7f95acb37683ec67' => 
     array (
       0 => '.\\templates\\fotos.tpl',
-      1 => 1413914810,
+      1 => 1414074146,
       2 => 'file',
     ),
   ),
@@ -38,10 +38,8 @@ $_smarty_tpl->tpl_vars['img']->_loop = true;
 "</h6>
 				<p>"<?php echo $_smarty_tpl->tpl_vars['img']->value['descripcion'];?>
 "</p> 
-				<button class="btn btn-default" data-toggle="modal" data-target="#myModal"> <a href="index.php?action=carrito" class="btn btn-primary" role="button"> Comprar </a> </button>
-				<button class="btn btn-default" data-toggle="modal" data-target="#myModal" Onclick="verfoto(<?php echo $_smarty_tpl->tpl_vars['img']->value['id'];?>
-)"> Ampliar </button>
-			</div><br>
+				<button class="btn btn-default" data-toggle="modal" data-target="#myModal"> <a href="index.php?action=carrito"> Comprar </a> </button>
+			</div> <br>
 		</div>
 	<?php } ?>
 </div><?php }} ?>

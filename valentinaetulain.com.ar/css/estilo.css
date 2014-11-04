@@ -14,7 +14,6 @@ img.responsive {
 	margin-left: 0px;
 }
 
-  
 /* Additional */
     
 #divBoxed {position:relative}
@@ -27,8 +26,7 @@ img.responsive {
 /***** BOOTSTRAP CSS BASE OVERRIDE *****/
 
 body {
-	background-position: inherit inherit;
-	background-repeat: repeat repeat;
+	background-image: url("./imagenes/background.jpg");
 }
 
 #divBoxed {
@@ -103,7 +101,7 @@ Footer{
   
 #divMenuRight {
 	float:center;
-	width:94.5%;
+	width:100%;
 	margin-top: 10px;
 	padding-top:0px;
 }
@@ -129,15 +127,34 @@ img.imgindex{
 
 /* Biografia */
 div.span9{
+	float: center;
 	margin-top: 175px;
-	margin-left: 75px;
 }
 
 p.bio{
 	font-family: Actor, sans-serif;
 	font-size: 14px;
 	color: rgb(224, 95, 3);
-	background-color: black;
+}
+
+a.vacia{
+	color: orange;
+}
+
+a.vacia:hover, a.vacia:focus {
+	color: grey;
+	text-decoration: none;
+}
+
+div.textobio{
+	width: auto;
+	height: auto;
+	text-align: center;
+}
+
+div.contentbio{
+	margin-left: 300px;
+	margin-right: 300px;
 }
 
 p{
@@ -168,11 +185,12 @@ h1{
 	color: rgb(150, 150, 150);
 	text-align: center;
 	background-color: black; 
+	margin-left: 15px; 
 }
 
 /* Fotos */
 section.galeria{
-	margin-left: 55px;
+	margin-left: 15px;
 }
 
 h6{

@@ -39,6 +39,10 @@
 		include './controler/controlador.php';
 		$controler = new Controlador();
 		$controler->carrito();
+	}else if($_REQUEST['action'] == 'login'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->login();
 	}else if($_REQUEST['action'] == 'registro'){
 		include './controler/controlador.php';
 		$controler = new Controlador();
