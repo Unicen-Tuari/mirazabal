@@ -15,7 +15,6 @@
 		public function eventos(){
 			include "./model/eventos_model.php";
 			$modelo_lista = new Eventos_model();
-		
 			include './view/vistaeventos.php';
 			$vista = new Vistaeventos();
 			$vista->lista = $modelo_lista->load_eventos();
@@ -74,6 +73,66 @@
 			include './view/vistalogin.php';
 			$vista = new Vistalogin();
 			$vista->mostrar();
+		}
+		
+		public function GuardarRegistro(){
+			include './view/vistaGuardarRegistro.php';
+			include "./model/GuardarRegistro_model.php";
+			$usuario = new Usuario();
+			$reg = array(':nombre'=>$_POST["nombre"], ':email'=>$_POST["email"], ':pass'=>$_POST["pass"]);
+			$usuario->guardarusuario($reg);
+			$vista = new VistaGuardarRegistro();
+			$vista->mostrar();
+			// Agregar tiempo de espera
+			header('Location: index.php?action=login');
+		}
+		
+		public function Ingresar(){
+			include './view/vistaindice.php';
+			include_once './model/GuardarRegistro_model.php';
+			$reg = array(':email'=>$_POST["email"], ':pass'=>$_POST["pass"]);
+			
+			$v = new Usuario();
+
+			$consulta = $v->verificarusuario($reg);
+			
+			if (count($consulta) == 0){
+				header('Location: index.php?action=loginerror');
+				exit();
+			}else{
+				$_SESSION['idusuario'] = $consulta[0]['id'];
+				$_SESSION['nombre'] = $consulta[0]['nombre'];
+				$vista = new Vistaindice();
+				$vista->mostrar();
+			}
+		}
+		
+		public function Logout(){
+			include './view/vistaregistro.php';
+				session_destroy();
+				$vista = new Vistaregistro();
+				$vista->mostrar();
+		}
+		
+		public function Loginerror(){
+			include './view/vistaloginerror.php';
+			$vista = new Vistaloginerror();
+			$vista->mostrar();
+			
+		}
+		
+		public function guardarcomentario(){
+			include './view/vistacontactoExito.php';
+			include "./model/GuardarRegistro_model.php";
+			$usuario = new Usuario();
+			$reg = array(':nombre'=>$_POST["nombre"], ':email'=>$_POST["email"], ':message'=>$_POST["message"]);
+			$usuario->guardarcomentario($reg);
+			$vista = new VistacontactoExito();
+			$vista->mostrar();
+		}
+			
+		protected function usuariologueado(){
+			return (isset($_SESSION['idusuario']));
 		}
 	}
 ?>

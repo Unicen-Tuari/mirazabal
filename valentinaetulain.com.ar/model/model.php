@@ -29,6 +29,13 @@
 			$q->execute($arr);
 			return $q->fetchAll();
 		}
+		
+		public function insert($sql, $arr){
+			error_reporting(-1);
+			$conn = $this->conectar();
+			$q = $conn->prepare($sql, $arr);
+			$q->execute($arr);
+			return $conn->lastInsertId();
+		}
 }
-
 ?>

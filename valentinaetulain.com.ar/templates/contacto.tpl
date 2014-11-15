@@ -11,6 +11,7 @@
 				</div>
 				<div id="contenidoform">										
 					<form id="formualario" method="post" onSubmit="return validacion();" >
+						<input type="hidden" name="action" value="guardarComentario"/>
 						<div class="contenedor_formulario">
 							<label for="name">Nombre:</label>
 							<br>

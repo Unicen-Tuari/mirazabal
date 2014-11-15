@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-11-15 18:50:48
-         compiled from ".\templates\login.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:178045449261296b6e7-06333628%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.19, created on 2014-11-12 13:31:22
+         compiled from ".\templates\loginerror.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:119095463531ad01416-63318317%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '642179a6a1a4ab9d21bc445aa5a2162be4f7182d' => 
+    '223f98954cb291285536c484d1e33b69b5df7a11' => 
     array (
-      0 => '.\\templates\\login.tpl',
-      1 => 1416073759,
+      0 => '.\\templates\\loginerror.tpl',
+      1 => 1415795297,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '178045449261296b6e7-06333628',
+  'nocache_hash' => '119095463531ad01416-63318317',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_54492612a44399_73701261',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_5463531ae1b738_17611459',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54492612a44399_73701261')) {function content_54492612a44399_73701261($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php if ($_valid && !is_callable('content_5463531ae1b738_17611459')) {function content_5463531ae1b738_17611459($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 <section class="contacto">
 	<div class="content">
@@ -29,11 +29,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</div>
 			<div class="conten1">
 				<div> 
-					<h4> Gracias por su visita! </h4>
+					<h4> Usuario o contraseña INCORRECTA! Intente de nuevo </h4>
 				</div>
 				<div id="contenidoform">										
 					<form id="formualario" action="index.php" method="POST">	
-					<input type="hidden" name="action" value="ingresar"/>
 						<input type="hidden" name="action" value="ingresar"/>
 						<div class="contenedor_formulario">
 							<label for="email">Email:</label>

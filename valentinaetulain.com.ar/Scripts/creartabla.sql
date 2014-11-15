@@ -26,10 +26,28 @@ hora int NOT NULL,
 descripcion VARCHAR( 150 ) NOT NULL
 );
 
-INSERT INTO evento (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Argentina', 'Tandil', '2014-07-12', '19', 'Argentina campeon);
+INSERT INTO evento (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Argentina', 'Tandil', '2014-07-12', '19', 'Argentina campeon');
 
 INSERT INTO evento (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Espa&ntildea', ' Pamplona', '2014-07-3', '19', 'Casamiento');
 
 INSERT INTO evento (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Italia', 'Minturno', '2014-08-3', '19', 'Cumplea&ntildeos de 15');
 
 INSERT INTO evento (administrador, pais, localidad, fecha, hora, descripcion) VALUES ('Administrador', 'Francia', 'Avi&ntildeon', '2014-09-3', '19', 'Desfile');
+
+DROP TABLE IF EXISTS USUARI
+
+CREATE TABLE usuario(
+nombre varchar(50) NOT NULL,
+email varchar(100) NOT NULL,
+pass varchar(25) NOT NULL 
+);
+
+INSERT INTO usuario (nombre, mail, pass) VALUES ('Matias', 'mirazabal@gmail.com', 'mira534');
+
+
+CREATE TABLE comentarios (  
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,  
+nombre VARCHAR( 50 ) NOT NULL,
+email  VARCHAR( 50 ) NOT NULL,
+mensaje VARCHAR( 500 ) NOT NULL,
+);

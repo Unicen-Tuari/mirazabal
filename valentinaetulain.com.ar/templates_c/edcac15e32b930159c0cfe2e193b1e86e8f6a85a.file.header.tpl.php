@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-10-23 18:00:18
+<?php /* Smarty version Smarty-3.1.19, created on 2014-11-12 13:08:41
          compiled from ".\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2889542aeb9d2f8bc7-89994727%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'edcac15e32b930159c0cfe2e193b1e86e8f6a85a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1414079722,
+      1 => 1415794118,
       2 => 'file',
     ),
   ),
@@ -33,7 +33,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<title>Valentina Etulain</title>
 			<link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
 			<link href="bootstrap-3.2.0-dist/css/bootstrap-responsive.min.css" rel="stylesheet">
-			<link href="css/font-awesome.css" rel="stylesheet">			
 			<link href="css/estilo.css" rel="stylesheet" type="text/css">
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 			
@@ -77,6 +76,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 												<ul class="dropdown-menu">
 													<li><a href="index.php?action=login"> Login </a> </li>
 													<li><a href="index.php?action=carrito"> Mi carrito </a> </li>
+													<li><a href="index.php?action=login"> Salir </a> </li>
 												</ul>
 											</ul>
 											

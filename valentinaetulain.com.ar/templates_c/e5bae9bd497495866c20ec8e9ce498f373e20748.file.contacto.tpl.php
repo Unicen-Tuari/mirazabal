@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-10-23 16:45:51
+<?php /* Smarty version Smarty-3.1.19, created on 2014-11-15 17:22:21
          compiled from ".\templates\contacto.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:24710542aedaa0b0036-99766818%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e5bae9bd497495866c20ec8e9ce498f373e20748' => 
     array (
       0 => '.\\templates\\contacto.tpl',
-      1 => 1414075548,
+      1 => 1416068148,
       2 => 'file',
     ),
   ),
@@ -33,6 +33,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				</div>
 				<div id="contenidoform">										
 					<form id="formualario" method="post" onSubmit="return validacion();" >
+						<input type="hidden" name="action" value="guardarComentario"/>
 						<div class="contenedor_formulario">
 							<label for="name">Nombre:</label>
 							<br>

@@ -12,7 +12,6 @@
 			<title>Valentina Etulain</title>
 			<link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
 			<link href="bootstrap-3.2.0-dist/css/bootstrap-responsive.min.css" rel="stylesheet">
-			<link href="css/font-awesome.css" rel="stylesheet">			
 			<link href="css/estilo.css" rel="stylesheet" type="text/css">
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 			{literal}
@@ -56,6 +55,7 @@
 												<ul class="dropdown-menu">
 													<li><a href="index.php?action=login"> Login </a> </li>
 													<li><a href="index.php?action=carrito"> Mi carrito </a> </li>
+													<li><a href="index.php?action=login"> Salir </a> </li>
 												</ul>
 											</ul>
 											

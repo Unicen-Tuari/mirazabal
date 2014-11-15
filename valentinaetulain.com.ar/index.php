@@ -1,6 +1,7 @@
 <?php 
-	error_reporting(E_ALL);
-	ini_set('display_errors', 1);
+	error_reporting(-1);
+	//ini_set('display_errors', 1);
+	session_start();
 	
 	if(!array_key_exists('action', $_REQUEST)){
 		include './controler/controlador.php';
@@ -47,5 +48,25 @@
 		include './controler/controlador.php';
 		$controler = new Controlador();
 		$controler->registro();
+	}else if($_REQUEST['action'] == 'guardarRegistro'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->GuardarRegistro();
+	}else if($_REQUEST['action'] == 'ingresar'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->Ingresar();
+	}else if($_REQUEST['action'] == 'logout'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->Logout();
+	}else if($_REQUEST['action'] == 'loginerror'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->Loginerror();
+	}else if($_REQUEST['action'] == 'guardarComentario'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->guardarComentario();
 	}
 ?>

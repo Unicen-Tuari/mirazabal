@@ -7,11 +7,10 @@
 			</div>
 			<div class="conten1">
 				<div> 
-					<h4> Gracias por su visita! </h4>
+					<h4> Usuario o contraseña INCORRECTA! Intente de nuevo </h4>
 				</div>
 				<div id="contenidoform">										
 					<form id="formualario" action="index.php" method="POST">	
-					<input type="hidden" name="action" value="ingresar"/>
 						<input type="hidden" name="action" value="ingresar"/>
 						<div class="contenedor_formulario">
 							<label for="email">Email:</label>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-10-21 17:26:51
+<?php /* Smarty version Smarty-3.1.19, created on 2014-11-04 12:28:18
          compiled from ".\templates\registro.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:15735433b9fb79fd98-76128558%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'aa358a315e4bbf3d0730f098d5e3e61058d73bd4' => 
     array (
       0 => '.\\templates\\registro.tpl',
-      1 => 1413905208,
+      1 => 1415100494,
       2 => 'file',
     ),
   ),
@@ -30,25 +30,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<h4> Complete el siguiente formulario: </h4>
 			</div>
 															
-			<form onSubmit="return  validacion();" >
-															
+			<form action="index.php" method="POST" onSubmit="return  validacion();" >
+				<input type="hidden" name="action" value="guardarRegistro"/>											
 				<div class="contenedor_formulario">
 					<label for="name">Nombre:</label>
 					<br>
 					<input type="text" name="nombre" id="nombre">
-				</div>
-				
-				<div class="contenedor_formulario">
-					<label for="name">Apellido:</label>
-					<br>
-					<input type="text" name="apellido" id="apellido">
 				</div>
 														
 				<div class="contenedor_formulario">
 					<label for="email">Email:</label>
 					<br>
 					<input type="text" name="email" id="email">
-				</div> <br>
+				</div> 
+				<div class="contenedor_formulario">
+					<label for="password">Password:</label>
+					<br>
+					<input type="password" name="pass">
+				</div><br>
 				<button id="cargar"> Enviar </button>
 			</form>
 		</div>
