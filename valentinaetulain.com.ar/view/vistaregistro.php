@@ -1,10 +1,9 @@
 <?php 
-	require('Smarty-3.1.19/libs/Smarty.class.php');
+	include_once 'view/view.php';
 	
-	class Vistaregistro {
+	class Vistaregistro extends View{
 		public function mostrar(){
-			$smarty = new Smarty();
-			$smarty->display('registro.tpl');			
+			$this->smarty->display('registro.tpl');			
 		}
 	}
 ?>

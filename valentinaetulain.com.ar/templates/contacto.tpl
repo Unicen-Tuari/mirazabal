@@ -10,8 +10,8 @@
 					<h4> Gracias por dejar tu comentario! </h4>
 				</div>
 				<div id="contenidoform">										
-					<form id="formualario" method="post" onSubmit="return validacion();" >
-						<input type="hidden" name="action" value="guardarComentario"/>
+					<form id="formualario" method="post" enctype="multipart/form-data">
+						<input type="hidden" name="action" value="mail"/>
 						<div class="contenedor_formulario">
 							<label for="name">Nombre:</label>
 							<br>
@@ -32,6 +32,7 @@
 						</div>
 						<br>
 						<button id="cargar"> Enviar </button>
+						<input type="hidden" name="phpmailer">
 					</form>
 				</div>
 			</div>

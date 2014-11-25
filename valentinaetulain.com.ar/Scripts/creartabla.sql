@@ -2,17 +2,19 @@ DROP TABLE IF EXISTS imagen;
 
 CREATE TABLE imagen (  
 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,  
-titulo VARCHAR( 50 ) NOT NULL ,  
+titulo VARCHAR( 50 ) NOT NULL ,
+categoria VARCHAR( 50 ) NOT NULL ,    
 descripcion TEXT NOT NULL ,  
+costo NUMERIC NOT NULL ,  
 archivo VARCHAR( 100 ) NOT NULL  
 );
 
 
-INSERT INTO imagen (titulo, descripcion, archivo) VALUES ('Paisaje 1', 'Dia de playa nublado', 'imagenes/1.jpg');
-INSERT INTO imagen (titulo, descripcion, archivo) VALUES ('Paisaje 2', 'Sierra en invierno', 'imagenes/2.jpg');
-INSERT INTO imagen (titulo, descripcion, archivo) VALUES ('Paisaje 3', 'Luna llena', 'imagenes/3.jpg');
-INSERT INTO imagen (titulo, descripcion, archivo) VALUES ('Mariposa', 'Mariposa en una rama', 'imagenes/4.jpg');
-INSERT INTO imagen (titulo, descripcion, archivo) VALUES ('Paisaje', 'Dia de campo', 'imagenes/5.jpg');
+INSERT INTO imagen (titulo, categoria, descripcion, costo, archivo) VALUES ('Paisaje 1', 'Paisajes', 'Dia de playa nublado', '2.000', 'imagenes/1.jpg');
+INSERT INTO imagen (titulo, categoria, descripcion, costo,  archivo) VALUES ('Paisaje 2', 'Paisajes', 'Sierra en invierno', '2.000', 'imagenes/2.jpg');
+INSERT INTO imagen (titulo, categoria, descripcion, costo, archivo) VALUES ('Paisaje 3', 'Paisajes', 'Luna llena', '2.000', 'imagenes/3.jpg');
+INSERT INTO imagen (titulo, categoria, descripcion, costo,  archivo) VALUES ('Mariposa', 'Animales', 'Mariposa en una rama', '2.000', 'imagenes/4.jpg');
+INSERT INTO imagen (titulo, categoria, descripcion, costo,  archivo)VALUES ('Paisaje', 'Paisajes', 'Dia de campo', '2.000', 'imagenes/5.jpg');
 
 DROP TABLE IF EXISTS eventos;
 
@@ -51,3 +53,39 @@ nombre VARCHAR( 50 ) NOT NULL,
 email  VARCHAR( 50 ) NOT NULL,
 mensaje VARCHAR( 500 ) NOT NULL,
 );
+
+
+
+
+
+CREATE TABLE usuario (
+	id INT NOT NULL AUTO_INCREMENT,
+	nombre	 VARCHAR(50) NOT NULL,
+	mail    VARCHAR(50)     NOT NULL,
+	pass    VARCHAR(50)     NOT NULL,
+	CONSTRAINT PK_USUARIO PRIMARY KEY (id)
+)ENGINE=InnoDB  DEFAULT CHARSET="utf8" AUTO_INCREMENT=1;
+
+
+CREATE TABLE compras (
+	idc       INT(10) NOT NULL AUTO_INCREMENT,
+id INT(10) NOT NULL,
+	email 	   VARCHAR (50) NOT NULL,
+	idfoto		   INT NOT NULL,
+	cant			   INT(10) NOT NULL,
+	tarjeta 	   VARCHAR (50) NOT NULL,
+
+	CONSTRAINT PK_COMPRAS PRIMARY KEY (idc),
+	CONSTRAINT FK_COMPRAS_USUARIO FOREIGN KEY (id) 
+REFERENCES usuario (id) ON DELETE CASCADE
+
+)ENGINE=InnoDB  DEFAULT CHARSET="utf8" AUTO_INCREMENT=1;
+
+
+
+
+INSERT INTO `imagenes`.`compras` (`idc`, `id`, `email`, `idfoto`, `cant`, `tarjeta`) VALUES (NULL, '1', 'lalala', '1', '1', 'dckldshvbilsd');
+
+SELECT * 
+FROM compras c
+JOIN usuario u ON(u.id = c.id)

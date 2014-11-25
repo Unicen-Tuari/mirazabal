@@ -1,10 +1,9 @@
 <?php 
-	require('Smarty-3.1.19/libs/Smarty.class.php');
+	include_once 'view/view.php';
 	
-	class Vistaindice {
+	class Vistaindice extends View{
 		public function mostrar(){
-			$smarty = new Smarty();
-			$smarty->display('index.tpl');			
+			$this->smarty->display('index.tpl');			
 		}
 	}
 ?>

@@ -1,14 +1,13 @@
 <?php 
-	require('Smarty-3.1.19/libs/Smarty.class.php');
+	include_once 'view/view.php';
 	
-	class VistadetalleEvento {
+	class VistadetalleEvento extends View {
 	
 		public $id;
 		
 		public function mostrar($r){
-			$smarty = new Smarty();
-			$smarty->assign('evento', $r);
-			$smarty->display('detalleEvento.tpl');			
+			$this->smarty->assign('evento', $r);
+			$this->smarty->display('detalleEvento.tpl');			
 		}
 	}
 ?>

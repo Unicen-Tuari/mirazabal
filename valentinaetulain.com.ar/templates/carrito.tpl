@@ -7,18 +7,22 @@
 					<th> Producto </th>
 					<th> Titulo </th>
 					<th> Cantidad </th>
-					<th> Costo Unitario </th>
-					<th> Costo Total </th>
+					<th> Costo </th>
 				</tr>
 			</thead>
 				<tbody>	
+					{foreach $lista as $compra}
 						<tr>
-								<td> <img class="carrito" src="imagenes/1.jpg"> </td>
-								<td> Paisaje </td>
-								<td> 1 </td>
-								<td> $2.000.000 </td>
-								<td> $2.000.000 </td>
+							<td> <img class="carrito" src="imagenes/{$compra.id}.jpg"> </td>
+							<td> {$compra.titulo} </td>
+							<td> 1 </td>
+							<td> {$compra.costo} </td>
 						</tr>
+					{foreachelse}
+						<tr>
+							<td> No realizo compras aun </td>
+						</tr>
+					{/foreach}
 				</tbody>
 		</table>
 	</div>	

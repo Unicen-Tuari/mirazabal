@@ -1,10 +1,9 @@
 <?php 
-	require('Smarty-3.1.19/libs/Smarty.class.php');
+	include_once 'view/view.php';
 	
-	class VistaGuardarRegistro {
+	class VistaGuardarRegistro extends View {
 		public function mostrar(){
-			$smarty = new Smarty();
-			$smarty->display('contactoreg.tpl');			
+			$this->smarty->display('contactoreg.tpl');			
 		}
 	}
 ?>

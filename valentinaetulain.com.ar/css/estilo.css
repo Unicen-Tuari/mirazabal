@@ -2,7 +2,7 @@
 
 
 
-/* Responsive Image */
+/* Responsive Image 
 
 img.responsive {
 	max-width:100%;
@@ -12,6 +12,16 @@ img.responsive {
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
 	margin-left: 0px;
+}
+*/
+img.img-galeria{
+	height:110%;
+	width:110%;
+}
+
+button.img-galeria{
+	height:20%;
+	width:20%;
 }
 
 /* Additional */
@@ -81,7 +91,7 @@ Footer{
 }
 
 .divPanel {
-	padding: 30px;
+	padding: 10px;
 }
 
 .transparent-bg {

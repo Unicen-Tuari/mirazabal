@@ -1,14 +1,13 @@
 <?php 
-	require('Smarty-3.1.19/libs/Smarty.class.php');
+	include_once 'view/view.php';
 	
-	class Vistafotos {
+	class Vistafotos extends View {
 	
 	    public $galeria;
 		
 		public function mostrar(){
-			$smarty = new Smarty();
-			$smarty->assign('galeria', $this->galeria);
-			$smarty->display('fotos.tpl');			
+			$this->smarty->assign('galeria', $this->galeria);
+			$this->smarty->display('fotos.tpl');			
 		}
 	}
 ?>

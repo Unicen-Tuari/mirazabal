@@ -33,6 +33,35 @@
 								</div>
 								
 								<div id="divMenuRight" class="pull-right">
+								{if ($log)}
+									<nav class="navbar navbar-inverse" role="navigation">
+										<div class="collapse navbar-collapse navbar-ex1-collapse">
+											<ul class="nav navbar-nav">
+											  <li><a href="index.php">Home</a></li>
+											</ul>
+											<ul class="nav navbar-nav">
+											  <li><a href="index.php?action=biografia">Biografia</a></li>
+											</ul>
+											<ul class="nav navbar-nav">
+											  <li><a href="index.php?action=eventos">Eventos</a></li>
+											</ul>
+											<ul class="nav navbar-nav">
+											  <li><a href="index.php?action=galeria">Galeria</a></li>
+											</ul> 
+											<ul class="nav navbar-nav">
+											  <li><a href="index.php?action=contacto">Contacto</a></li>
+											</ul>
+											<ul class="nav navbar-nav navbar-right">
+											  	<a href="#" data-toggle="dropdown"> {$nombre} </a>
+												<ul class="dropdown-menu">
+													<li><a href="index.php?action=carrito"> Mi carrito </a> </li>
+													<li><a href="index.php?action=logout"> Salir </a> </li>
+												</ul>
+											</ul>
+											
+										</div>
+									</nav>	
+									{else}
 									<nav class="navbar navbar-inverse" role="navigation">
 										<div class="collapse navbar-collapse navbar-ex1-collapse">
 											<ul class="nav navbar-nav">
@@ -54,13 +83,14 @@
 											  	<a href="#" data-toggle="dropdown"> Sesion	</a>
 												<ul class="dropdown-menu">
 													<li><a href="index.php?action=login"> Login </a> </li>
-													<li><a href="index.php?action=carrito"> Mi carrito </a> </li>
-													<li><a href="index.php?action=login"> Salir </a> </li>
 												</ul>
 											</ul>
 											
 										</div>
-									</nav>	
+									</nav>
+								{/if}
+									
+								
 				
 								</div>
 							</div>

@@ -68,5 +68,21 @@
 		include './controler/controlador.php';
 		$controler = new Controlador();
 		$controler->guardarComentario();
+	}else if($_REQUEST['action'] == 'cargarcarrito'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->cargarcarrito();
+	}else if($_REQUEST['action'] == 'fotoscategoria'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->fotoscategoria();
+	}else if($_REQUEST['action'] == 'agregaracarrito'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->agregaracarrito();
+	}else if($_REQUEST['action'] == 'mail'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->mail();
 	}
 ?>

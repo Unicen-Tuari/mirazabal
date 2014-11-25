@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-11-15 17:22:21
+<?php /* Smarty version Smarty-3.1.19, created on 2014-11-24 22:59:38
          compiled from ".\templates\contacto.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:24710542aedaa0b0036-99766818%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:112965473aa4a6736e5-98630065%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'e5bae9bd497495866c20ec8e9ce498f373e20748' => 
     array (
       0 => '.\\templates\\contacto.tpl',
-      1 => 1416068148,
+      1 => 1416667608,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '24710542aedaa0b0036-99766818',
+  'nocache_hash' => '112965473aa4a6736e5-98630065',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_542aedaa1118d2_63881049',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_5473aa4a6d9e02_98851827',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_542aedaa1118d2_63881049')) {function content_542aedaa1118d2_63881049($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php if ($_valid && !is_callable('content_5473aa4a6d9e02_98851827')) {function content_5473aa4a6d9e02_98851827($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 <section class="contacto">
 	<div class="content">
@@ -32,8 +32,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<h4> Gracias por dejar tu comentario! </h4>
 				</div>
 				<div id="contenidoform">										
-					<form id="formualario" method="post" onSubmit="return validacion();" >
-						<input type="hidden" name="action" value="guardarComentario"/>
+					<form id="formualario" method="post" enctype="multipart/form-data">
+						<input type="hidden" name="action" value="mail"/>
 						<div class="contenedor_formulario">
 							<label for="name">Nombre:</label>
 							<br>
@@ -54,6 +54,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						</div>
 						<br>
 						<button id="cargar"> Enviar </button>
+						<input type="hidden" name="phpmailer">
 					</form>
 				</div>
 			</div>

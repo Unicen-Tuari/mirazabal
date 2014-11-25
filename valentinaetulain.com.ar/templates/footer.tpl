@@ -11,5 +11,6 @@
 		<script type="text/javascript" src="javascript/jquery-2.1.1.min.js"> </script>
 		<script type="text/javascript" src="javascript/fotos.js"> </script>
 		<script type="text/javascript" src="javascript/contacto.js"> </script>
+		<script type="text/javascript" src="javascript/compra.js"> </script>
 	</body>
 </html>

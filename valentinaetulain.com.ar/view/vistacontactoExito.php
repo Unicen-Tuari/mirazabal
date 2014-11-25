@@ -1,10 +1,9 @@
 <?php 
-	require('Smarty-3.1.19/libs/Smarty.class.php');
+	include_once 'view/view.php';
 	
-	class VistacontactoExito {
+	class VistacontactoExito  extends View {
 		public function mostrar(){
-			$smarty = new Smarty();
-			$smarty->display('contactoExito.tpl');			
+			$this->smarty->display('contactoExito.tpl');			
 		}
 	}
 ?>

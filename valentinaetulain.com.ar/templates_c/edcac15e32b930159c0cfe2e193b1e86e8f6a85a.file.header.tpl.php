@@ -1,25 +1,30 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-11-12 13:08:41
+<?php /* Smarty version Smarty-3.1.19, created on 2014-11-24 23:00:54
          compiled from ".\templates\header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2889542aeb9d2f8bc7-89994727%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:167755473a4feb54105-52942257%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'edcac15e32b930159c0cfe2e193b1e86e8f6a85a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1415794118,
+      1 => 1416866450,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2889542aeb9d2f8bc7-89994727',
+  'nocache_hash' => '167755473a4feb54105-52942257',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_542aeb9d2fd0b2_27493345',
+  'unifunc' => 'content_5473a4feb7ac85_06596916',
+  'variables' => 
+  array (
+    'log' => 0,
+    'nombre' => 0,
+  ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_542aeb9d2fd0b2_27493345')) {function content_542aeb9d2fd0b2_27493345($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_5473a4feb7ac85_06596916')) {function content_5473a4feb7ac85_06596916($_smarty_tpl) {?><!DOCTYPE html>
 
 	<html>
 		
@@ -54,6 +59,36 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								</div>
 								
 								<div id="divMenuRight" class="pull-right">
+								<?php if (($_smarty_tpl->tpl_vars['log']->value)) {?>
+									<nav class="navbar navbar-inverse" role="navigation">
+										<div class="collapse navbar-collapse navbar-ex1-collapse">
+											<ul class="nav navbar-nav">
+											  <li><a href="index.php">Home</a></li>
+											</ul>
+											<ul class="nav navbar-nav">
+											  <li><a href="index.php?action=biografia">Biografia</a></li>
+											</ul>
+											<ul class="nav navbar-nav">
+											  <li><a href="index.php?action=eventos">Eventos</a></li>
+											</ul>
+											<ul class="nav navbar-nav">
+											  <li><a href="index.php?action=galeria">Galeria</a></li>
+											</ul> 
+											<ul class="nav navbar-nav">
+											  <li><a href="index.php?action=contacto">Contacto</a></li>
+											</ul>
+											<ul class="nav navbar-nav navbar-right">
+											  	<a href="#" data-toggle="dropdown"> <?php echo $_smarty_tpl->tpl_vars['nombre']->value;?>
+ </a>
+												<ul class="dropdown-menu">
+													<li><a href="index.php?action=carrito"> Mi carrito </a> </li>
+													<li><a href="index.php?action=logout"> Salir </a> </li>
+												</ul>
+											</ul>
+											
+										</div>
+									</nav>	
+									<?php } else { ?>
 									<nav class="navbar navbar-inverse" role="navigation">
 										<div class="collapse navbar-collapse navbar-ex1-collapse">
 											<ul class="nav navbar-nav">
@@ -75,13 +110,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 											  	<a href="#" data-toggle="dropdown"> Sesion	</a>
 												<ul class="dropdown-menu">
 													<li><a href="index.php?action=login"> Login </a> </li>
-													<li><a href="index.php?action=carrito"> Mi carrito </a> </li>
-													<li><a href="index.php?action=login"> Salir </a> </li>
 												</ul>
 											</ul>
 											
 										</div>
-									</nav>	
+									</nav>
+								<?php }?>
+									
+								
 				
 								</div>
 							</div>

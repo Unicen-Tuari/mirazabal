@@ -3,7 +3,7 @@ function validacion()
 	$(document).ready(function(){
 		$('#cargar').click(function(){
 			$.ajax({
-				url: "index.php?action=contactoExito",
+				url: "index.php?action=mail",
 				success:function(data){
 					$('#contenidoform').html(data);
 				}

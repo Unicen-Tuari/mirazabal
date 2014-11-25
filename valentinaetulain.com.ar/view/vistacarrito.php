@@ -1,10 +1,11 @@
 <?php 
-	require('Smarty-3.1.19/libs/Smarty.class.php');
+	include_once 'view/view.php';
 	
-	class Vistacarrito {
-		public function mostrar(){
-			$smarty = new Smarty();
-			$smarty->display('carrito.tpl');			
+	class Vistacarrito extends View{
+	
+		public function mostrar($lista){
+			$this->smarty->assign('lista', $lista);
+			$this->smarty->display('carrito.tpl');			
 		}
 	}
 ?>
