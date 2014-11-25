@@ -2,7 +2,9 @@
 		</div>	
 		<div id="divBoxedFooter" class="container">
 			<footer>
-				Matias Irazabal - All Right Reserved
+				<fieldset>
+					Matias Irazabal - All Right Reserved
+				</fieldset>
 			</footer>
 		</div>
 		

@@ -22,6 +22,7 @@ img.img-galeria{
 button.img-galeria{
 	height:20%;
 	width:20%;
+	background-color: white;
 }
 
 /* Additional */
@@ -77,10 +78,8 @@ body {
 }
 
 Footer{
-	border-bottom-left-radius: 30px;
-	border-bottom-right-radius: 30px;
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 	font-family: Actor, sans-serif;
 	font-size: 20px;
 	text-align: center;
@@ -88,6 +87,7 @@ Footer{
 	margin-right:-20px;
 	padding-left:20px;
 	padding-right:20px;
+	border: 1px solid rgb(213, 220, 224);
 }
 
 .divPanel {
@@ -132,13 +132,14 @@ div.contenedor{
 }
 
 img.imgindex{
-	float: center-left;
+	text-align: center;
 }
 
 /* Biografia */
 div.span9{
 	float: center;
 	margin-top: 175px;
+	margin-left: 90px;
 }
 
 p.bio{
@@ -157,14 +158,19 @@ a.vacia:hover, a.vacia:focus {
 }
 
 div.textobio{
-	width: auto;
-	height: auto;
+	float: right;
+	margin-right: 16px;
+	margin-top: -432px;
+	width: 500px;
+	height: 432px;
 	text-align: center;
+	background-color: rgb(213, 220, 224);
 }
 
 div.contentbio{
-	margin-left: 300px;
-	margin-right: 300px;
+	float:left;
+	margin-top: -175px;
+	margin-left: 150px;
 }
 
 p{
@@ -183,6 +189,13 @@ div.eventos{
 div.conten1{
 	width:99%;
 	height:auto;
+}
+
+div.conteventos{
+	width:99%;
+	height:auto;
+	background-color: rgb(213, 220, 224);
+	margin-top: -10px;
 }
 
 p.eventos{

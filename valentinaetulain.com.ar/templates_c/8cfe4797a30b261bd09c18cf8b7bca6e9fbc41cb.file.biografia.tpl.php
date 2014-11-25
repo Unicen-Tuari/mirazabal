@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-11-24 22:59:31
+<?php /* Smarty version Smarty-3.1.19, created on 2014-11-25 13:03:34
          compiled from ".\templates\biografia.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:114855473aa43cfde92-51242275%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8cfe4797a30b261bd09c18cf8b7bca6e9fbc41cb' => 
     array (
       0 => '.\\templates\\biografia.tpl',
-      1 => 1414074985,
+      1 => 1416917012,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
   'unifunc' => 'content_5473aa43d7aae2_26707095',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5473aa43d7aae2_26707095')) {function content_5473aa43d7aae2_26707095($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
@@ -25,7 +25,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	
 <section>
 	<div class="row-fluid">
-		<div class="contentbio">
 			<div class="span9">
 				<img src = "imagenes\foto_bio.jpg" class="img-responsive" alt = "Biografia" />			
 			</div>
@@ -41,7 +40,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				fotograma. Hoy en dia reside en Buenos Aires donde toma fotografias en eventos, 
 				cumplea&ntildeos, casamientos, etc </p> <br>
 			</div>
-		</div>
 	</div>
 </section>
 

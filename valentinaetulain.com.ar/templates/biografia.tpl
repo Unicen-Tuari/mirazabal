@@ -3,7 +3,6 @@
 	
 <section>
 	<div class="row-fluid">
-		<div class="contentbio">
 			<div class="span9">
 				<img src = "imagenes\foto_bio.jpg" class="img-responsive" alt = "Biografia" />			
 			</div>
@@ -19,7 +18,6 @@
 				fotograma. Hoy en dia reside en Buenos Aires donde toma fotografias en eventos, 
 				cumplea&ntildeos, casamientos, etc </p> <br>
 			</div>
-		</div>
 	</div>
 </section>
 

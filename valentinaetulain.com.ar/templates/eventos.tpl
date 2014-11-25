@@ -5,7 +5,7 @@
 			<div class="eventos">
 				<h1> Proximos Eventos..!! </h1>
 			</div>
-			<div class="conten1">
+			<div class="conteventos">
 				{foreach $lista as $eventos}
 					<a href="index.php?action=detalleEvento&id={$eventos.id}"> 
 						<p class="eventos"> {$eventos.descripcion} </p>

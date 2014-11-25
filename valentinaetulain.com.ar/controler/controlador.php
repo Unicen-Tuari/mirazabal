@@ -196,15 +196,17 @@
 		
 		public function login(){
 			include './view/vistalogin.php';
+			$_SESSION = array();
+			session_destroy();
 			$vista = new Vistalogin();
 			$vista->mostrar();
 		}
 		
 		public function Logout(){
-			include './view/vistaregistro.php';
+			include './view/vistalogin.php';
 				$_SESSION = array();
 				session_destroy();
-				$vista = new Vistaregistro();
+				$vista = new Vistalogin();
 				$vista->mostrar();
 		}
 		

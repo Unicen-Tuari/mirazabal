@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-11-24 22:59:46
+<?php /* Smarty version Smarty-3.1.19, created on 2014-11-25 13:29:47
          compiled from ".\templates\fotos.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:148095473aa521854e3-20044376%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b15ad257907201d2711b8e7b7f95acb37683ec67' => 
     array (
       0 => '.\\templates\\fotos.tpl',
-      1 => 1416614636,
+      1 => 1416918582,
       2 => 'file',
     ),
   ),
@@ -15,14 +15,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_5473aa52219ad3_12211031',
   'variables' => 
   array (
     'galeria' => 0,
     'img' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5473aa52219ad3_12211031',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5473aa52219ad3_12211031')) {function content_5473aa52219ad3_12211031($_smarty_tpl) {?><div class="row">
 	<?php  $_smarty_tpl->tpl_vars['img'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['img']->_loop = false;
@@ -38,7 +38,7 @@ $_smarty_tpl->tpl_vars['img']->_loop = true;
 "<h6>
  				<p>"<?php echo $_smarty_tpl->tpl_vars['img']->value['descripcion'];?>
 "</p>
-				<p>Costo: <?php echo $_smarty_tpl->tpl_vars['img']->value['costo'];?>
+				<p>Costo: $<?php echo $_smarty_tpl->tpl_vars['img']->value['costo'];?>
  </p>
 				<button class="btn btn-default" data-toggle="modal" onclick="clickcomprar(<?php echo $_smarty_tpl->tpl_vars['img']->value['id'];?>
 )"> Comprar</a> </button>
