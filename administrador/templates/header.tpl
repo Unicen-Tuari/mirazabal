@@ -39,9 +39,9 @@
 											<ul class="nav navbar-nav">
 												<li><a href="index.php?action=compras"> Ver Compras </a></li>
 											</ul>
-											<ul class="nav navbar-nav">
+									<!--	<ul class="nav navbar-nav">
 												<li><a href="index.php?action=comentarios"> Comentarios </a></li>
-											</ul>
+											</ul> -->
 											<ul class="nav navbar-nav">
 												<li><a href="index.php?action=logout"> Salir </a></li>
 											</ul>

@@ -10,7 +10,7 @@ class Index_model extends Model{
 	}
 	
 	function verificarusuario($reg){
-		$sql = "SELECT id, nombre FROM usuario WHERE mail =:email AND pass =:pass";
+		$sql = "SELECT id, nombre, admin FROM usuario WHERE mail =:email AND pass =:pass";
 		return $this->queryPrepare($sql, $reg);
 	}
 }

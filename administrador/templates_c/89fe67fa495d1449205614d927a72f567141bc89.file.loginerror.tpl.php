@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-11-15 19:15:05
+<?php /* Smarty version Smarty-3.1.19, created on 2014-11-20 22:17:07
          compiled from ".\templates\loginerror.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:30732546792bce2db33-31208317%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '89fe67fa495d1449205614d927a72f567141bc89' => 
     array (
       0 => '.\\templates\\loginerror.tpl',
-      1 => 1416075302,
+      1 => 1416075325,
       2 => 'file',
     ),
   ),
@@ -31,7 +31,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   
 		<div class="panel-body">
 			
-			<form class="form-horizontal" role="form" >
+			<form class="form-horizontal" role="form">
 				<div class="form-group">
 					<label for="ejemplo_email_3" class="col-lg-2 control-label">Email</label>
 					<div class="col-lg-10">

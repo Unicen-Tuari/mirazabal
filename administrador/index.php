@@ -23,10 +23,10 @@
 		include './controler/controlador.php';
 		$controler = new Controlador();
 		$controler->compras();
-	}else if($_REQUEST['action'] == 'comentarios'){
+/*	}else if($_REQUEST['action'] == 'comentarios'){
 		include './controler/controlador.php';
 		$controler = new Controlador();
-		$controler->comentarios();
+		$controler->comentarios();*/
 	}else if($_REQUEST['action'] == 'borrarcomentarios'){
 		include './controler/controlador.php';
 		$controler = new Controlador();
@@ -47,5 +47,37 @@
 		include './controler/controlador.php';
 		$controler = new Controlador();
 		$controler->Ingresar();
+	}else if($_REQUEST['action'] == 'eliminarevento'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->eliminarevento();
+	}else if($_REQUEST['action'] == 'editarevento'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->editarevento();
+	}else if($_REQUEST['action'] == 'agregarfoto'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->agregarfoto();
+	}else if($_REQUEST['action'] == 'eliminarfoto'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->eliminarfoto();
+	}else if($_REQUEST['action'] == 'editarfoto'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->editarfoto();
+	}else if($_REQUEST['action'] == 'agregarusuario'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->agregarusuario();
+	}else if($_REQUEST['action'] == 'eliminarusuario'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->eliminarusuario();
+	}else if($_REQUEST['action'] == 'editarusuario'){
+		include './controler/controlador.php';
+		$controler = new Controlador();
+		$controler->editarusuario();
 	}
 ?>
