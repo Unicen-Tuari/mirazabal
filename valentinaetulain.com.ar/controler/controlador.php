@@ -200,7 +200,9 @@
 						$usuario->insertenlineadecompra($id_compra, $consulta[0]['id'], $consulta[0]['costo']);
 					}
 					unset($_SESSION['carrito']); // Limpio el carrito de compras
-					// Mensaje compra realizada con exito
+					include_once './view/vistacompra.php';
+					$vista = new CompraExito();
+					$vista->mostrar();
 			    }else{
 				}
 				
