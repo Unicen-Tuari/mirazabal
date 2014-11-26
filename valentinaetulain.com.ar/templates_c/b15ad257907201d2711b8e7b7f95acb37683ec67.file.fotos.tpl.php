@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-11-26 13:17:51
+<?php /* Smarty version Smarty-3.1.19, created on 2014-11-26 14:21:37
          compiled from ".\templates\fotos.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:148095473aa521854e3-20044376%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b15ad257907201d2711b8e7b7f95acb37683ec67' => 
     array (
       0 => '.\\templates\\fotos.tpl',
-      1 => 1417004268,
+      1 => 1417008092,
       2 => 'file',
     ),
   ),
@@ -40,7 +40,7 @@ $_smarty_tpl->tpl_vars['img']->_loop = true;
 "</p>
 				<p>Costo: $<?php echo $_smarty_tpl->tpl_vars['img']->value['costo'];?>
  </p>
-				<button class="btn btn-default" data-toggle="modal" onclick="clickcomprar(<?php echo $_smarty_tpl->tpl_vars['img']->value['id'];?>
+				<button class="btn btn-default" data-toggle="modal" id="comprar" onclick="clickcomprar(<?php echo $_smarty_tpl->tpl_vars['img']->value['id'];?>
 )"> Comprar</a> </button>
 					<!-- Modal -->
 					<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

@@ -6,7 +6,7 @@
 				<h6>"{$img.titulo}"<h6>
  				<p>"{$img.descripcion}"</p>
 				<p>Costo: ${$img.costo} </p>
-				<button class="btn btn-default" data-toggle="modal" onclick="clickcomprar({$img.id})"> Comprar</a> </button>
+				<button class="btn btn-default" data-toggle="modal" id="comprar" onclick="clickcomprar({$img.id})"> Comprar</a> </button>
 					<!-- Modal -->
 					<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						<div class="modal-dialog">

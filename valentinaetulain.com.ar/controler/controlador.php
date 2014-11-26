@@ -184,6 +184,7 @@
 				
 			}else{
 				//Agregar redireccion por ajax
+				header("Location:index.php?action=login");
 			}
 		}
 		
