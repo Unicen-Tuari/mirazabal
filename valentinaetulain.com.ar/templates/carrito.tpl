@@ -25,6 +25,7 @@
 					{/foreach}
 				</tbody>
 		</table>
+		<input type="button" value="Comprar" onClick="location.href = 'index.php?action=compra'">
 	</div>	
 </section>
 {include file="footer.tpl"}

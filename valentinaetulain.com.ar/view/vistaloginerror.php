@@ -3,7 +3,7 @@
 	
 	class Vistaloginerror extends View{
 		public function mostrar(){
-			$smarty->display('loginerror.tpl');			
+			$this->smarty->display('loginerror.tpl');			
 		}
 	}
 ?>

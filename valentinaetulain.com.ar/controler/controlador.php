@@ -4,7 +4,7 @@
 		/*          INDEX          */ 
 	
 		public function indice(){
-			include './view/vistaindice.php';
+			include_once './view/vistaindice.php';
 			$vista = new Vistaindice();
 			$vista->mostrar();
 		}
@@ -12,7 +12,7 @@
 		/*          BIOGRAFIA          */
 		
 		public function biografia(){
-			include './view/vistabiografia.php';
+			include_once './view/vistabiografia.php';
 			$vista = new Vistabiografia();
 			$vista->mostrar();
 		}
@@ -20,9 +20,9 @@
 		/*          EVENTOS          */
 		
 		public function eventos(){
-			include "./model/eventos_model.php";
+			include_once "./model/eventos_model.php";
 			$modelo_lista = new Eventos_model();
-			include './view/vistaeventos.php';
+			include_once './view/vistaeventos.php';
 			$vista = new Vistaeventos();
 			$vista->lista = $modelo_lista->load_eventos();
 			$vista->mostrar();
@@ -31,9 +31,9 @@
 				/*     DETALLE EVENTOS     */
 			
 		public function detalleEventos(){
-			include "./model/detalleEventos_model.php";
+			include_once "./model/detalleEventos_model.php";
 			$modelo_lista = new detalleEvento_model();
-			include './view/vistadetalleEvento.php';
+			include_once './view/vistadetalleEvento.php';
 			$vista = new VistadetalleEvento();
 			$r = $modelo_lista->load_detalleEvento($_GET['id']);
 			$vista->mostrar($r[0]);
@@ -42,8 +42,8 @@
 		/*          GALERIA          */
 		
 		public function galeria(){
-			include './view/vistagaleria.php';
-			include '/model/galeria_model.php';
+			include_once './view/vistagaleria.php';
+			include_once '/model/galeria_model.php';
 			$modelo = new Galeria_model();
 			$vista = new Vistagaleria();
 			$vista->lista = $modelo->load_categorias();
@@ -51,9 +51,9 @@
 		}
 		
 		public function fotoscategoria(){
-			include "./model/fotos_model.php";
+			include_once "./model/fotos_model.php";
 			$modelo_galeria = new Fotos_model();	
-			include './view/vistafotos.php';
+			include_once './view/vistafotos.php';
 			$vista = new Vistafotos();
 			$vista->galeria = $modelo_galeria->load_fotoscategoria($_GET['categoria']);
 			$vista->mostrar();	
@@ -62,9 +62,9 @@
 			 /*     FOTOS     */
 		
 		public function fotos(){
-			include "./model/fotos_model.php";
+			include_once "./model/fotos_model.php";
 			$modelo_galeria = new Fotos_model();	
-			include './view/vistafotos.php';
+			include_once './view/vistafotos.php';
 			$vista = new Vistafotos();
 			$vista->galeria = $modelo_galeria->load_fotos();
 			$vista->mostrar();	
@@ -73,25 +73,72 @@
 		/*          CONTACTO          */
 
 		public function contacto(){
-			include './view/vistacontacto.php';
+			include_once './view/vistacontacto.php';
 			$vista = new Vistacontacto();
 			$vista->mostrar();
 		}
 		
 		public function contactoExito(){
-			include './view/vistacontactoExito.php';
+			include_once './view/vistacontactoExito.php';
 			$vista = new VistacontactoExito();
 			$vista->mostrar();
 		}
 		
+		/*          MAIL          */
+		
 		public function mail(){
-			include './view/vistacontactoExito.php';
-			include "./model/mail_model.php";
-			$usuario = new Mail();
-			$reg = array(':nombre'=>$_POST["nombre"], ':email'=>$_POST["email"], ':message'=>$_POST["message"]);
-			$usuario->enviarmail($reg);
-			$vista = new VistacontactoExito();
-			$vista->mostrar();
+			include_once './view/vistacontactoExito.php';
+			$msg = null;
+			if (isset($_POST["phpmailer"])){
+				
+				$nombre = $_POST['nombre'];
+				$dest = $_POST["email"];
+				$email = 'matuira_aya@hotmail.com';
+				$mensaje = $_POST["message"];
+				$asunto = 'Correo enviado desde la pagina web' ;
+				
+				require "phpmailer/PHPMailerAutoload.php";
+			
+				$mail = new PHPMailer;
+				  
+				//indico a la clase que use SMTP
+				$mail->IsSMTP();
+				  
+				//permite modo debug para ver mensajes de las cosas que van ocurriendo
+				//$mail->SMTPDebug = 2;
+
+				//Debo de hacer autenticación SMTP
+				$mail->SMTPAuth = true;
+				$mail->SMTPSecure = "ssl";
+
+				//indico el servidor de Gmail para SMTP
+				$mail->Host = "smtp.gmail.com";
+
+				//indico el puerto que usa Gmail
+				$mail->Port = 465;
+
+				//indico un usuario / clave de un usuario de gmail
+				$mail->Username = "mirazabal.94@gmail.com";
+				$mail->Password = "matu37985534";
+			   
+				$mail->From = $email;
+				
+				$mail->FromName = $nombre;
+				
+				$mail->Subject = $asunto.' por '.$dest;
+			   
+				$mail->addAddress($email, $nombre);
+				
+				$mail->MsgHTML($mensaje);
+					 
+				if($mail->Send()){
+					$vista = new VistacontactoExito();
+					$vista->mostrar();
+				}else{
+					echo "Lo siento, ha habido un error al enviar el mensaje a $email";
+					
+				}
+			}
 		}
 		
 		/*          CARRITO          */
@@ -99,10 +146,11 @@
 		public function carrito(){
 			if($this->usuariologueado()){
 				if(isset($_SESSION['carrito'])){
-					include './view/vistacarrito.php';
-					include "./model/carrito_model.php";
+					include_once './view/vistacarrito.php';
+					include_once "./model/carrito_model.php";
 					include_once './model/fotos_model.php';
-					$carrito = new Carrito_model();
+					
+					$_carrito = new Carrito_model();
 					$vista = new Vistacarrito();
 					$foto = new Fotos_model();
 					$mostrar = array();
@@ -110,19 +158,19 @@
 						$consulta = $foto->load_fotografiaporid($id); //Guarda el query
 						$mostrar[] = $consulta[0];
 					}
-					$vista->lista = $carrito->load_carrito();
+					
 					$vista->mostrar($mostrar);
 				}else{
-					include "./model/carrito_model.php";
-					include './view/vistacarrito.php';
+					include_once "./model/carrito_model.php";
+					include_once './view/vistacarrito.php';
 					$carrito = new Carrito_model();
 					$vista = new Vistacarrito();
 					$mostrar = array();
-					$vista->lista = $carrito->load_carrito();					
 					$vista->mostrar($mostrar);
 				}
 			}else{
-				//Ofrecer login
+				echo '404 Not Found, ';
+				echo 'Access Denied';
 			}
 		}
 		
@@ -135,20 +183,44 @@
 				var_dump($_SESSION['carrito']);
 				
 			}else{
-				//Ofrecer login
+				//Agregar redireccion por ajax
+			}
+		}
+		
+		public function compra(){
+			include_once './model/fotos_model.php';
+			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL){
+				if(isset( $_SESSION['carrito']) && count($_SESSION['carrito']) >0){				
+					include_once "./model/compras_model.php";
+					$usuario = new Compras();
+					$id_compra = $usuario->nuevacompra($_SESSION['idusuario']); //Guarda en la variable el id de la compra
+					$foto = new Fotos_model();
+					foreach($_SESSION['carrito'] as $id => $producto){
+						$consulta = $foto->load_fotografiaporid($id); //Guarda el query //Recupero los atributos de la compra
+						$usuario->insertenlineadecompra($id_compra, $consulta[0]['id'], $consulta[0]['costo']);
+					}
+					unset($_SESSION['carrito']); // Limpio el carrito de compras
+					// Mensaje compra realizada con exito
+			    }else{
+				}
+				
+			} else{
+				include_once './view/vistalogin.php';
+				$vista = new Vistalogin();
+				$vista->mostrar();
 			}
 		}
 		
 		public function cargarcarrito(){
 			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL){
-				include "./model/GuardarRegistro_model.php";
+				include_once "./model/GuardarRegistro_model.php";
 				$usuario = new Usuario();
 				$compra = array(':email'=>$_POST['email'], ':idfoto'=>$_POST['idfoto'], 'cant'=>$_POST['cant'], ':tarjeta'=>$_POST['tarjeta']);
 				$usuario->hacercompra($compra);
-				include './view/vistacarrito.php';
+				include_once './view/vistacarrito.php';
 				header('Location: index.php?action=carrito');
 			}else{
-				include './view/vistalogin.php';
+				include_once './view/vistalogin.php';
 				$vista = new Vistalogin();
 				$vista->mostrar();
 			}
@@ -157,14 +229,14 @@
 		/*         SESION          */
 		
 		public function registro(){
-			include './view/vistaregistro.php';
+			include_once './view/vistaregistro.php';
 			$vista = new Vistaregistro();
 			$vista->mostrar();
 		}
 		
 		public function GuardarRegistro(){
-			include './view/vistaGuardarRegistro.php';
-			include "./model/GuardarRegistro_model.php";
+			include_once './view/vistaGuardarRegistro.php';
+			include_once "./model/GuardarRegistro_model.php";
 			$usuario = new Usuario();
 			$reg = array(':nombre'=>$_POST["nombre"], ':email'=>$_POST["email"], ':pass'=>$_POST["pass"]);
 			$usuario->guardarusuario($reg);
@@ -175,7 +247,7 @@
 		}
 		
 		public function Ingresar(){
-			include './view/vistaindice.php';
+			include_once './view/vistaindice.php';
 			include_once './model/GuardarRegistro_model.php';
 			$reg = array(':email'=>$_POST["email"], ':pass'=>$_POST["pass"]);
 			
@@ -195,7 +267,7 @@
 		}
 		
 		public function login(){
-			include './view/vistalogin.php';
+			include_once './view/vistalogin.php';
 			$_SESSION = array();
 			session_destroy();
 			$vista = new Vistalogin();
@@ -203,7 +275,7 @@
 		}
 		
 		public function Logout(){
-			include './view/vistalogin.php';
+			include_once './view/vistalogin.php';
 				$_SESSION = array();
 				session_destroy();
 				$vista = new Vistalogin();
@@ -211,7 +283,7 @@
 		}
 		
 		public function Loginerror(){
-			include './view/vistaloginerror.php';
+			include_once './view/vistaloginerror.php';
 			$vista = new Vistaloginerror();
 			$vista->mostrar();
 			
