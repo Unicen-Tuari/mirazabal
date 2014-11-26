@@ -14,7 +14,7 @@
 		/*          EVENTOS          */
 		
 		public function eventos(){
-			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] = 1){
+			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] === '1'){
 				include "./model/eventos_model.php";
 				include './view/vistaeventos.php';
 				$modelo = new Eventos_model();
@@ -31,7 +31,7 @@
 		public function agregarevento(){
 			include './view/vistaeventos.php';
 			include "./model/agregarevento_model.php";
-			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] = 1){
+			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] === '1'){
 				$evento = new Evento();
 				$reg = array( ':administrador'=>$_POST['administrador'], ':pais'=>$_POST['pais'], ':localidad'=>$_POST['localidad'], ':fecha'=>$_POST['fecha'], ':hora'=>$_POST['hora'],':descripcion'=>$_POST['descripcion']);
 				$vista = new Vistaeventos();
@@ -47,7 +47,7 @@
 		public function editarevento(){
 			include './view/vistaeventos.php';
 			include "./model/agregarevento_model.php";
-			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] = 1){
+			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] === '1'){
 				$evento = new Evento();
 				$reg = array( ':id'=>$_POST['id'], ':administrador'=>$_POST['administrador'], ':pais'=>$_POST['pais'], ':localidad'=>$_POST['localidad'], ':fecha'=>$_POST['fecha'], ':hora'=>$_POST['hora'],':descripcion'=>$_POST['descripcion']);
 				$vista = new Vistaeventos();
@@ -63,7 +63,7 @@
 		public function eliminarevento(){
 			include './view/vistaeventos.php';
 			include "./model/agregarevento_model.php";
-			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] = 1){
+			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] === '1'){
 				$evento = new Evento();
 				$reg = array('id'=>$_REQUEST['id']);
 				$vista = new Vistaeventos();
@@ -79,7 +79,7 @@
 		/*          FOTOS          */
 		
 		public function fotos(){
-			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] = 1){
+			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] === '1'){
 				include "./model/fotos_model.php";
 				include './view/vistafotos.php';
 				$modelo = new Fotos_model();	
@@ -96,7 +96,7 @@
 		public function agregarfoto(){
 			include './view/vistafotos.php';
 			include "./model/agregarfotos_model.php";
-			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] = 1){
+			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] === '1'){
 				$evento = new Fotos_model();
 				$reg = array( ':titulo'=>$_POST['titulo'], ':categoria'=>$_POST['categoria'], ':descripcion'=>$_POST['descripcion'], ':costo'=>$_POST['costo'], ':archivo'=>"imagenes/".$_POST['archivo']);
 				$vista = new Vistafotos();
@@ -112,7 +112,7 @@
 		public function eliminarfoto(){
 			include './view/vistafotos.php';
 			include "./model/agregarfotos_model.php";
-			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] = 1){
+			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] === '1'){
 				$evento = new Fotos_model();
 				$reg = array( 'id'=>$_REQUEST['id']);
 				$vista = new Vistafotos();
@@ -128,7 +128,7 @@
 		public function editarfoto(){
 			include './view/vistafotos.php';
 			include "./model/agregarfotos_model.php";
-			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] = 1){
+			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] === '1'){
 				$evento = new Fotos_model();
 				$reg = array(':id'=>$_POST['id'], ':titulo'=>$_POST['titulo'], ':categoria'=>$_POST['categoria'], ':descripcion'=>$_POST['descripcion'], ':costo'=>$_POST['costo'], ':archivo'=>"imagenes/".$_POST['archivo']);
 				$vista = new Vistafotos();
@@ -144,7 +144,7 @@
 		/*          USUARIOS          */
 		
 		public function usuarios(){	
-			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] = 1){
+			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] === '1'){
 				include './view/vistausuarios.php';
 				include "./model/usuarios_model.php";
 				$modelo = new Usuarios();
@@ -161,7 +161,7 @@
 		public function agregarusuario(){
 			include './view/vistausuarios.php';
 			include "./model/agregarusuario_model.php";
-			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] = 1){
+			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] === '1'){
 				$evento = new Usuario();
 				$reg = array( ':nombre'=>$_POST['nombre'], ':mail'=>$_POST['mail'], ':pass'=>$_POST['pass'], ':admin'=>$_POST['admin']);
 
@@ -178,7 +178,7 @@
 		public function eliminarusuario(){
 			include './view/vistausuarios.php';
 			include "./model/agregarusuario_model.php";
-			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] = 1){
+			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] === '1'){
 				$evento = new Usuario();
 				$reg = array( 'id'=>$_REQUEST['id']);
 				$vista = new Vistausuarios();
@@ -194,7 +194,7 @@
 		public function editarusuario(){
 			include './view/vistausuarios.php';
 			include "./model/agregarusuario_model.php";
-			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] = 1){
+			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] === '1'){
 				$evento = new Usuario();
 				$vista = new Vistausuarios();
 				$reg = array( ':id'=>$_POST['id'], ':nombre'=>$_POST['nombre'], ':mail'=>$_POST['mail'], ':pass'=>$_POST['pass'], ':admin'=>$_POST['admin']);
@@ -209,12 +209,15 @@
 						
 		/*          COMPRAS           */
 		
-		public function compras(){
-			//include "./model/compras_model.php";
-			//$modelo_galeria = new Compras_model();	
-			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] = 1){
+		public function compras(){	
+			if(isset($_SESSION['idusuario']) && $_SESSION['idusuario'] != NULL && $_SESSION['admin'] === '1'){
 				include "./view/vistacompras.php";
+				include "./model/compras_model.php";
+				$modelo = new Compras();
 				$vista = new Vistacompras();
+				$vista->lista = $modelo->visualizarcompras();
+				//var_dump($vista);
+				//die();
 				$vista->mostrar();
 			}else{
 				include './view/vistaindex.php';
@@ -222,7 +225,7 @@
 				$vista->mostrar();
 			}
 		}
-
+		
 		/*          CONTACTO          */
 		
 		/*	LO MANDA POR MAIL AHORA

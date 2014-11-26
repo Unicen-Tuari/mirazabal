@@ -10,18 +10,26 @@
 				<table class="table table-striped">
 					<thead>
 						<th> Usuario </th>
-						<th> Producto </th>
+						<th> Foto </th>
 						<th> Titulo </th>
 						<th> Cantidad </th>
-						<th> Total </th>
+						<th> Costo </th>
+						<th> Fecha de Compra </th>
 					</thead>
-					<tbody>
-						<td> mirazabal1@gmail.com </td>
-						<td> Foto </td>
-						<td> Algun titulo </td>
-						<td> Muchas </td>
-						<td> $$$ </td>
-					</tbody>
+					{foreach $lista as $compras}
+						<tbody>
+							<td> <p class="eventos"> {$compras.mail} </p> </td>
+							<td> <p> <img src="{$compras.archivo}" alt ="imagen db" /> </td>
+							<td> <p class="eventos"> {$compras.titulo} </p> </td>
+							<td> <p class="eventos"> {$compras.cantidad} </p> </td>
+							<td> <p class="eventos"> {$compras.precio} </p> </td>
+							<td> <p class="eventos"> {$compras.fechacompra} </p> </td>
+						</tbody>
+					{foreachelse}
+						<tbody>
+							<td> <p class="eventos"> No hay Compras </p> </td>
+						</tbody>
+					{/foreach}
 				</table>
 			</div>
 		</div>
